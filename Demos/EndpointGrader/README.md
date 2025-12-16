@@ -55,7 +55,7 @@ az deployment group create \
 
 ### 5. Publish function
 ```bash
-func azure functionapp publish countdown-endpoint-demo --python
+func azure functionapp publish <your-function-app-name> --python
 ```
 
 ### 6. Test the function
