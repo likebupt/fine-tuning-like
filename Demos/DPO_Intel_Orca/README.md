@@ -161,19 +161,16 @@ The notebook includes sections for:
 
 This cookbook uses the **Azure AI Evaluation SDK** to comprehensively assess model quality before and after DPO fine-tuning. The Azure AI Evaluation SDK provides production-ready evaluators that use GPT models as judges to score your model outputs across multiple dimensions.
 
-**5 Key Metrics for DPO Evaluation**:
+**3 Key Metrics for DPO Evaluation**:
 
 1. **Coherence (1-5)**: Measures logical flow and structure - ensures responses are well-organized and make sense
 2. **Fluency (1-5)**: Assesses grammatical correctness and natural language quality - validates human-like writing
-3. **Relevance (1-5)**: Evaluates how directly the response addresses the query - confirms the model stays on-topic
-4. **Groundedness (1-5)**: Checks factual accuracy against provided context - prevents hallucinations and unsupported claims
-5. **Similarity (1-5)**: Measures semantic alignment with preferred outputs - quantifies how well the model learned DPO preferences
+3. **Groundedness (1-5)**: Checks factual accuracy against provided context - prevents hallucinations and unsupported claims
 
 **Why These Metrics Matter for DPO**:
 - DPO trains models to prefer high-quality responses over low-quality alternatives
 - These metrics validate that the fine-tuned model generates responses that are both accurate and aligned with human preferences
 - Comparing pre- and post-fine-tuning scores demonstrates the effectiveness of DPO training
-- **Similarity** and **Relevance** typically show the largest improvements after DPO fine-tuning
 
 ## Troubleshooting
 
