@@ -134,22 +134,17 @@ The RFT format for mathematical reasoning follows this structure:
 {
   "messages": [
     {
-      "role": "system",
-      "content": "You are a mathematical reasoning expert. Solve problems with detailed step-by-step thinking and provide final answers in \\boxed{} format. Show all intermediate calculations and explain your reasoning clearly."
-    },
-    {
       "role": "user",
-      "content": "Call a scalene triangle K disguisable if there exists a triangle K′ similar to K with two shorter sides precisely as long as the two longer sides of K, respectively. Call a disguisable triangle integral if the lengths of all its sides are integers. (a) Find the side lengths of the integral disguisable triangle with the smallest possible perimeter. (b) Let K be an arbitrary integral disguisable triangle for which no smaller integral disguisable triangle similar to it exists. Prove that at least two side lengths of K are perfect squares."
+      "content": "You are a mathematical reasoning expert. Solve problems with detailed step-by-step thinking and provide final answers in \\boxed{} format. Show all intermediate calculations and explain your reasoning clearly.\n\nCall a scalene triangle K disguisable if there exists a triangle K′ similar to K with two shorter sides precisely as long as the two longer sides of K, respectively. Call a disguisable triangle integral if the lengths of all its sides are integers. (a) Find the side lengths of the integral disguisable triangle with the smallest possible perimeter. (b) Let K be an arbitrary integral disguisable triangle for which no smaller integral disguisable triangle similar to it exists. Prove that at least two side lengths of K are perfect squares."
     }
   ],
-  "answer": "4, 6, 9"
+  "answer": "9"
 }
 ```
 
 Each training example contains:
-- **messages**: Array with exactly 2 messages:
-  - **system message**: Instructions for mathematical problem-solving behavior
-  - **user message**: The mathematical problem statement
+- **messages**: Array with exactly 1 message:
+  - **user message**: Combined system prompt and mathematical problem statement. The system instructions are included at the beginning of the user content, followed by the actual problem.
 - **answer**: Ground truth final answer (used by the grader for verification)
 
 **Important**: Unlike Supervised Fine-Tuning (SFT), RFT format does NOT include an assistant message. The model learns to generate solutions through reinforcement signals from the grader, which compares the model's output against the ground truth answer field.
