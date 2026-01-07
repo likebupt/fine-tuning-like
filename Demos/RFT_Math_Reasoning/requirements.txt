@@ -1,19 +1,13 @@
-# Azure AI SDK
-azure-ai-projects>=1.0.0b6
-azure-identity>=1.19.0
-azure-ai-inference>=1.0.0b7
+# Azure AI SDK for fine-tuning
+azure-ai-projects>=2.0.0b1
 
-# Data processing
-pandas>=2.0.0
-pyarrow>=14.0.0
-datasets>=2.14.0
+# OpenAI SDK
+openai
 
-# Utilities
-python-dotenv>=1.0.0
-tqdm>=4.65.0
+# Azure Cognitive Services for model deployment
+azure-identity
+azure-mgmt-cognitiveservices
 
-# Math verification (optional, for grading)
-sympy>=1.12
+# Core libraries
+python-dotenv
 
-# Jupyter
-ipykernel>=6.25.0
