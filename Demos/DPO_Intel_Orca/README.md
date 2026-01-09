@@ -1,6 +1,6 @@
 # DPO Fine-Tuning with Intel Orca DPO Pairs Dataset
 
-This cookbook demonstrates how to fine-tune language models using Direct Preference Optimization (DPO) with the Intel Orca DPO Pairs dataset on Azure AI.
+This cookbook demonstrates how to fine-tune language models using Direct Preference Optimization (DPO) with the Intel Orca DPO Pairs dataset on Microsoft foundry.
 
 ## Overview
 
@@ -43,9 +43,9 @@ The model learns to increase the probability of generating preferred responses w
 
 This cookbook teaches you how to:
 
-1. Set up your Azure AI environment for DPO fine-tuning
+1. Set up your Microsoft foundry environment for DPO fine-tuning
 2. Prepare and format DPO training data in JSONL format
-3. Upload datasets to Azure AI
+3. Upload datasets to Microsoft foundry
 4. Evaluate base model performance before fine-tuning
 5. Create and configure a DPO fine-tuning job
 6. Monitor training progress
@@ -60,14 +60,7 @@ This cookbook teaches you how to:
 
 ## Supported Models
 
-DPO fine-tuning in Azure AI Foundry supports the following GPT models:
-
-- **gpt-4o**: Latest GPT-4 Optimized model
-- **gpt-4.1**: GPT-4.1 base model
-- **gpt-4.1-mini**: Compact version of GPT-4.1
-- **gpt-4.1-nano**: Smallest and most cost-efficient GPT-4.1 variant
-
-> **Note**: Model availability may vary by region. Check the [Azure OpenAI model availability](https://learn.microsoft.com/azure/ai-services/openai/concepts/models) page for the most current regional support.
+Find the supported DPO fine-tuning models in Microsoft foundry [here](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/fine-tuning-overview?view=foundry-classic). Model availability may vary by region. Check the [Azure OpenAI model availability](https://learn.microsoft.com/azure/ai-services/openai/concepts/models) page for the most current regional support.
 
 ## Files in This Cookbook
 
@@ -187,4 +180,4 @@ This cookbook uses the **Azure AI Evaluation SDK** to comprehensively assess mod
 
 **Authentication Error**
 - Verify your Azure credentials are correct
-- Check that your subscription has access to Azure AI Studio
+- Check that your subscription has access to Microsoft Foundry

@@ -1,6 +1,6 @@
 # Supervised Fine-Tuning with PubMed Medical Research Summarization Dataset
 
-This cookbook demonstrates how to fine-tune language models using **Supervised Fine-Tuning (SFT)** with the PubMed Medical Research Summarization dataset on Azure AI.
+This cookbook demonstrates how to fine-tune language models using **Supervised Fine-Tuning (SFT)** with the PubMed Medical Research Summarization dataset on Microsoft Foundry.
 
 ## Overview
 
@@ -19,8 +19,8 @@ Medical research articles often contain complex scientific information, detailed
 **Source**: [PubMed Article Summarization Dataset on Kaggle](https://www.kaggle.com/datasets/thedevastator/pubmed-article-summarization-dataset)
 
 **Size**: 6,655 article-abstract pairs (curated subset for demonstration)
-- Training set: 4,999 examples (90.49 MB)
-- Validation set: 1,656 examples (30.75 MB)
+- Training set: 4,999 examples
+- Validation set: 1,656 examples
 
 > **Note**: This is a carefully curated subset of the full PubMed dataset (~4% of the original 119,924 training examples), optimized for efficient training and demonstration purposes while maintaining representative coverage of medical research topics and staying within GitHub's file size limits.
 
@@ -68,9 +68,9 @@ The model learns to generate concise abstracts that:
 
 This cookbook teaches you how to:
 
-1. Set up your Azure AI environment for supervised fine-tuning
+1. Set up your Microsoft Foundry environment for supervised fine-tuning
 2. Prepare and format medical research data in JSONL format
-3. Upload datasets to Azure AI
+3. Upload datasets to Microsoft Foundry
 4. Create and configure a supervised fine-tuning job
 5. Monitor training progress and review metrics
 6. Deploy and test your fine-tuned model
@@ -84,15 +84,7 @@ This cookbook teaches you how to:
 
 ## Supported Models
 
-Supervised fine-tuning in Azure AI Foundry supports the following OpenAI models:
-
-- **gpt-4o**
-- **gpt-4o-mini**
-- **gpt-4.1**
-- **gpt-4.1-mini**
-- **gpt-4.1-nano**
-
-> **Note**: Model availability may vary by region. Check the [Azure OpenAI model availability](https://learn.microsoft.com/azure/ai-services/openai/concepts/models) page for the most current regional support.
+Find the supported DPO fine-tuning models in Microsoft foundry [here](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/fine-tuning-overview?view=foundry-classic). Model availability may vary by region. Check the [Azure OpenAI model availability](https://learn.microsoft.com/azure/ai-services/openai/concepts/models) page for the most current regional support.
 
 ## Files in This Cookbook
 

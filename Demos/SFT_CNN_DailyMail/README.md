@@ -1,6 +1,6 @@
 # Supervised Fine-Tuning with CNN/DailyMail News Summarization Dataset
 
-This cookbook demonstrates how to fine-tune language models using **Supervised Fine-Tuning (SFT)** with the CNN/DailyMail News Text Summarization dataset on Azure AI.
+This cookbook demonstrates how to fine-tune language models using **Supervised Fine-Tuning (SFT)** with the CNN/DailyMail News Text Summarization dataset on Microsoft Foundry.
 
 ## Overview
 
@@ -17,9 +17,9 @@ This dataset is ideal for training models to:
 
 **Source**: [CNN/DailyMail on Kaggle](https://www.kaggle.com/datasets/gowrishankarp/newspaper-text-summarization-cnn-dailymail)
 
-**Size**: ~3,000 article-summary pairs (curated subset for demonstration)
-- Training set: ~2,700 examples (90%)
-- Validation set: ~300 examples (10%)
+**Size**: 2,504 article-summary pairs (curated subset for demonstration)
+- Training set: 2,255 examples (90%)
+- Validation set: 249 examples (10%)
 
 > **Note**: This is a carefully curated subset of the full CNN/DailyMail dataset, optimized for learning and demonstration purposes. The full dataset contains over 300,000 examples.
 
@@ -39,9 +39,9 @@ The model learns to generate concise summaries that:
 
 This cookbook teaches you how to:
 
-1. Set up your Azure AI environment for supervised fine-tuning
+1. Set up your Microsoft Foundry environment for supervised fine-tuning
 2. Prepare and format news summarization data in JSONL format
-3. Upload datasets to Azure AI
+3. Upload datasets to Microsoft Foundry
 4. Create and configure a supervised fine-tuning job
 5. Monitor training progress
 6. Deploy and test your fine-tuned model
@@ -55,23 +55,14 @@ This cookbook teaches you how to:
 
 ## Supported Models
 
-Supervised fine-tuning in Azure AI Foundry supports the following OpenAI models:
-
-- **gpt-4.1** 
-- **gpt-4.1-mini**
-- **gpt-4.1-nano**
-- **gpt-4o**
-- **gpt-4o-mini**
-
-
-> **Note**: Model availability may vary by region. Check the [Azure OpenAI model availability](https://learn.microsoft.com/azure/ai-services/openai/concepts/models) page for the most current regional support.
+Find the supported DPO fine-tuning models in Microsoft foundry [here](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/fine-tuning-overview?view=foundry-classic). Model availability may vary by region. Check the [Azure OpenAI model availability](https://learn.microsoft.com/azure/ai-services/openai/concepts/models) page for the most current regional support.
 
 ## Files in This Cookbook
 
 - **README.md**: This file - comprehensive documentation
 - **requirements.txt**: Python dependencies required for the cookbook
-- **training.jsonl**: Training dataset (~2,700 article-summary pairs)
-- **validation.jsonl**: Validation dataset (~300 article-summary pairs)
+- **training.jsonl**: Training dataset (2,255 article-summary pairs)
+- **validation.jsonl**: Validation dataset (249 article-summary pairs)
 - **sft_cnn_dailymail.ipynb**: Step-by-step notebook implementation
 
 ## Quick Start
@@ -109,7 +100,7 @@ Open sft_cnn_dailymail.ipynb and follow the step-by-step instructions.
 
 ## Dataset Format
 
-The supervised fine-tuning format follows the Azure AI chat completion structure:
+The supervised fine-tuning format follows the Microsoft Foundry chat completion structure:
 
 ```json
 {
