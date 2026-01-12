@@ -84,7 +84,7 @@ Create a .env file in the root of this directory with your Azure credentials:
 
 ```
 # Required for DPO Fine-Tuning
-AZURE_AI_PROJECT_ENDPOINT=<your-endpoint> 
+MICROSOFT_FOUNDRY_PROJECT_ENDPOINT=<your-endpoint> 
 AZURE_SUBSCRIPTION_ID=<your-subscription-id>
 AZURE_RESOURCE_GROUP=<your-resource-group>
 AZURE_AOAI_ACCOUNT=<your-foundry-account-name>

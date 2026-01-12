@@ -116,7 +116,7 @@ pip install -r requirements.txt
 Create a .env file in the root of this directory with your Azure credentials:
 
 ```
-AZURE_AI_PROJECT_ENDPOINT=<your-endpoint> 
+MICROSOFT_FOUNDRY_PROJECT_ENDPOINT=<your-endpoint> 
 MODEL_NAME=gpt-4.1
 AZURE_SUBSCRIPTION_ID=<your-subscription-id>
 AZURE_RESOURCE_GROUP=<your-resource-group>
