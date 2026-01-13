@@ -113,7 +113,7 @@ pip install -r requirements.txt
 
 ### 3. Set Up Environment Variables
 
-Create a .env file in the root of this directory with your Azure credentials:
+Copy the file `.env.template` (located in this folder), and save it as file named `.env`. Enter appropriate values for the environment variables used for the job you want to run.
 
 ```
 MICROSOFT_FOUNDRY_PROJECT_ENDPOINT=<your-endpoint> 
