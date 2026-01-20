@@ -259,7 +259,7 @@ The endpoint grader should return the graded score in JSON format as below:
 
 ## Samples
 
-- [Basic RFT sample - CountDown](../Demos/RFT_Countdown/)
-- [Endpoint Grader sample](../Demos/EndpointGrader/)
-- [Simple Tool calling in RFT](../Demos/RFT_ToolCall/)
-- [An E2E Agentic RFT sample - Ignite Zava Demo](../Demos/ZavaRetailAgent/)
+- [Basic RFT sample - CountDown](../RFT_Countdown/)
+- [Endpoint Grader sample](../EndpointGrader/)
+- [Simple Tool calling in RFT](./RFT_ToolCall/)
+- [An E2E Agentic RFT sample - Ignite Zava Demo](./ZavaRetailAgent/)
